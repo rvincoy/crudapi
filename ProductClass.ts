@@ -1,3 +1,4 @@
+//very basic class
 export class ProductClass {
     ProductID: number;
     Product: string;

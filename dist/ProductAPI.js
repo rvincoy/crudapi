@@ -28,10 +28,11 @@ const request = __importStar(require("request"));
 const ProductClass_1 = require("./ProductClass");
 class ProductAPI {
     getProductInfo(ProductID, cb) {
+        //api get call
         request.get('http://localhost:3002/api/products/' + ProductID, (error, response, body) => {
             let products = new ProductClass_1.ProductClass(JSON.parse(body));
-            //cb(products);
-            console.log(JSON.parse(body));
+            //cb(products); //not working JSON.parse(body). Product becomes undefined so not using it. 
+            console.log(JSON.parse(body)); //will just print the json data to the screen instead
         });
     }
 }

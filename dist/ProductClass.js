@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductClass = void 0;
+//very basic class
 class ProductClass {
     constructor(theBody) {
         this.ProductID = parseInt(theBody.ProductID);
